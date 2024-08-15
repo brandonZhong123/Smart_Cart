@@ -1,0 +1,44 @@
+.hero-section {
+  position: relative;
+  height: 600px; 
+  background-image: url('../images/hero (3).png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 10px; 
+}
+
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px; 
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-title .highlight {
+  color: black;
+}
+
+.cta-button {
+  font-family: "Montserrat", sans-serif;
+  background-color: silver;
+  border: 2px ;
+  color: white;
+  padding: 8px 16px; 
+  border-radius: 1rem; 
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  margin-top: 20px; 
+}
+
+.cta-button:hover {
+  color: black;
+  border-color: black;
+}
