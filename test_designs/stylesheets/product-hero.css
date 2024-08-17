@@ -1,0 +1,40 @@
+.product-filter {
+    display: inline-block;
+}
+.product-hero {
+    background-color: silver;
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+}
+.hero-label {
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    width: 600px;
+    padding-left: 60px;
+    padding-top: 80px;
+}
+
+.product-filter button {
+    cursor: pointer;
+    background-color: silver;
+    color: white;
+    border: none;
+}
+
+.product-filter-content a {
+    display: block;
+    text-decoration: none;
+}
+
+.product-filter-content {
+    display: none;
+    position: absolute;
+    background-color: silver;
+    min-width: 80px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-filter:hover .product-filter-content{
+    display: block;
+}

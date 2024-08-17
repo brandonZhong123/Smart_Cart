@@ -1,0 +1,42 @@
+.footer {
+    margin-top: 16px;
+    background-color: silver;
+    height: 300px;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.footer h1 {
+    padding-left: 16px;
+}
+
+.resources {
+    padding-right: 16px;
+}
+
+.email, .website, .contact-information i {
+    padding-left: 16px;
+    font-weight: bold;
+}
+
+.company li, .resources li {
+    padding-left: 24px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social-media  {
+    margin-top: 24px;
+}
+
+.social-media i {
+    margin-right: 128px;
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+
+
+
