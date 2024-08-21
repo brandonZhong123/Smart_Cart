@@ -1,18 +1,21 @@
 .product-filter {
     display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    
 }
 .product-hero {
     background-color: silver;
     margin-top: 100px;
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 .hero-label {
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     width: 600px;
     padding-left: 60px;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .product-filter button {
@@ -20,11 +23,17 @@
     background-color: silver;
     color: white;
     border: none;
+    border-radius: 10px;
 }
 
 .product-filter-content a {
     display: block;
     text-decoration: none;
+}
+
+.product-title {
+    text-decoration: none;
+    color: black;
 }
 
 .product-filter-content {
@@ -37,4 +46,8 @@
 
 .product-filter:hover .product-filter-content{
     display: block;
+}
+
+.filters {
+    margin-top: 10p;
 }

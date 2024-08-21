@@ -1,0 +1,19 @@
+.cart-wrapper {
+    display: flex;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.left-cart-page {
+    background-color: green;
+    width: 200px;
+    height: 300px;
+    flex: 1;
+}
+
+.right-cart-page {
+    background-color: yellow;
+    width: 200px;
+    height: 300px;
+    flex: 1;
+}

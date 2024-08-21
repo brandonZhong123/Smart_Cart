@@ -14,14 +14,13 @@
   margin-top: 60px;
 }
 
+
 .product-images {
-  height: 300px;
+  height: 200px;
 }
 
 .product-container {
-  
-  height: 600px;
-  width: 600px;
+  width: 300px;
   box-sizing: border-box;
   background-color: #f5f5f5;
   padding: 20px;
@@ -31,6 +30,7 @@
 }
 
 .product-information {
+  margin-top: 20px;
   justify-content: center;
   background-color: white;
   font-family:"Montserrat", sans-serif;
