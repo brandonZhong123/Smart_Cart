@@ -1,42 +1,52 @@
 .footer {
-    margin-top: 16px;
-    background-color: silver;
-    height: 300px;
-    display: flex;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    justify-content: space-between;
+  margin-top: 16px;
+  background-color: silver;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
-.footer h1 {
-    padding-left: 16px;
+.contact-information ul,
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.resources {
-    padding-right: 16px;
+.contact-item {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.email, .website, .contact-information i {
-    padding-left: 16px;
-    font-weight: bold;
+.contact-item i {
+  margin-right: 10px;
 }
 
-.company li, .resources li {
-    padding-left: 24px;
-    font-size: 20px;
-    font-weight: bold;
+.footer-section h1 {
+  margin-bottom: 15px;
 }
 
-.social-media  {
-    margin-top: 24px;
+.footer-section li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15px;
 }
 
 .social-media i {
-    margin-right: 128px;
-    display: block; 
-    margin-bottom: 10px; 
+  margin-bottom: 15px;
+  color: black;
 }
 
-
-
-
+.email, .website, .contact-information i {
+  padding-left: 16px;
+  font-weight: bold;
+}

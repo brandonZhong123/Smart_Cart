@@ -1,19 +1,16 @@
 .featured-products {
-  
   justify-content: center;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  
-
 }
+
 .featured-products-header {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 60px;
 }
-
 
 .product-images {
   height: 200px;
@@ -33,7 +30,7 @@
   margin-top: 20px;
   justify-content: center;
   background-color: white;
-  font-family:"Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 200px;
 }
 
@@ -42,18 +39,18 @@
   font-weight: bold;
   display: block;
 }
+
 .buy-now-button {
-  margin-top: 100px;
+  margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   background-color: silver;
-  border: 2px ;
+  border: 2px solid;
   color: white;
   padding: 8px 16px; 
   border-radius: 8px; 
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s ease, border-color 0.3s ease;
-  margin-top: 20px; 
 }
 
 .buy-now-button:hover {
@@ -64,10 +61,3 @@
 .social-media {
   display: block;
 }
-
-
-
-
-
-
-

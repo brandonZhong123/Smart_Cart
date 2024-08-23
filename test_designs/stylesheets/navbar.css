@@ -1,115 +1,116 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #FAF9F6;
-    height: 100px;
-    width: 100%;
-    padding: 10px 40px; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    box-sizing: border-box; 
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FAF9F6;
+  height: 100px;
+  width: 100%;
+  padding: 10px 40px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-sizing: border-box; 
+  z-index: 1000;
 }
 
 .logo {
-    color: white;
-    text-decoration: none;
-    height: 50px;
-    padding-top: 10px;
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  padding-top: 10px;
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .navbar-left {
-    display: flex;
-    align-items: center;
-    flex-grow: 1; 
-    padding-right: 20px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+  padding-right: 20px;
 }
 
 .navbar-left a {
-    font-family: "Montserrat", sans-serif;
-    color: darkgray;
-    text-decoration: none;
-    margin-left: 20px; 
-    font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: darkgray;
+  text-decoration: none;
+  margin-left: 20px; 
+  font-size: 16px;
 }
 
 .navbar-left a:hover {
-    text-decoration: underline;
-    color: black;
+  text-decoration: underline;
+  color: black;
 }
 
 .navbar-right {
-    display: flex;
-    align-items: center;
-    padding-right: 20px; 
+  display: flex;
+  align-items: center;
+  padding-right: 20px; 
 }
 
 .navbar-right a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    margin-left: 20px; 
-    font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  margin-left: 20px; 
+  font-size: 16px;
 }
 
 .navbar-right i {
-    margin-left: 20px; 
-    font-size: 30px;
+  margin-left: 20px; 
+  font-size: 30px;
 }
 
 .log-in {
-    color: gray;
+  color: gray;
 }
 
 .log-in:hover {
-    color: black;
+  color: black;
 }
 
 .register {
-    background-color: silver;
-    color: white;
-    border-radius: 30px;
-    padding: 8px 16px;
+  background-color: silver;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 16px;
 }
 
 .register:hover {
-    color: black;
+  color: black;
 }
 
 .search-bar {
-    height: 40px;
-    border-radius: 16px;
-    margin-left: 20px;
-    flex-grow: 1; 
-    padding: 0 15px;
-    border: 1px solid #ccc;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  height: 40px;
+  border-radius: 16px;
+  margin-left: 20px;
+  flex-grow: 1; 
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 form {
-    display: flex;
-    flex-grow: 1;
-    align-items: center; /
+  display: flex;
+  flex-grow: 1;
+  align-items: center; 
 }
 
 .search-icon {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding-left: 10px; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px; 
 }
+
 .search-icon i {
-    color: gray;
-    font-size: 24px;
+  color: gray;
+  font-size: 24px;
 }
 
 .search-icon:hover i {
-    color: black;
+  color: black;
 }
 
 .dropdown {
@@ -117,7 +118,6 @@ form {
   display: inline-block;
 }
 
-/* Dropdown Button */
 .dropdown-btn {
   font-family: "Montserrat", sans-serif;
   color: darkgray;
@@ -127,7 +127,6 @@ form {
   cursor: pointer;
 }
 
-/* Dropdown Content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -138,7 +137,6 @@ form {
   border-radius: 8px;
 }
 
-/* Links Inside the Dropdown */
 .dropdown-content a {
   color: darkgray;
   padding: 12px 16px;
@@ -147,20 +145,15 @@ form {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Change Color on Hover */
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Show the Dropdown on Hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change Color of Dropdown Button on Hover */
 .dropdown:hover .dropdown-btn {
   color: black;
 }
-
-

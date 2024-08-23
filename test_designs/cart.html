@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/cart.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/cart.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>My Shopping Bag</title>
 </head>
 <body>
 
-    <div class="cart-wrapper"> 
-        <div class="left-cart-page">
-            <p> </p>
-        </div>
-        <div class="right-cart-page">
-
-        </div>
+  <div class="cart-wrapper"> 
+    <div class="left-cart-page">
+      <h1>MY SHOPPING BAG</h1>
+      <table>
+        <tr>
+          <th>PRODUCT</th>
+          <th>PRICE</th>
+          <th>TOTAL</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-details"> 
+              <img src="images/placeholder.png" alt="Product Image">
+              <div class="product-info">
+                <p>Name</p>
+                <p>Company</p>
+                <p>Remove | Edit</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p>$4.55</p>
+          </td>
+          <td>
+            <p>$4.55</p>
+          </td>
+        </tr>     
+      </table>
     </div>
+    <div class="right-cart-page">
+      <h1>SUMMARY</h1>
+      <div class="subtotal">
+        <p>Subtotal</p>
+        <p>$4.55</p>
+      </div>
+      <div class="shipping">
+        <p>Shipping</p>
+        <p>TBD</p>
+      </div>
+      <div class="sales-tax">
+        <p>Sales Tax</p>
+        <p>TBD</p>
+      </div>
+      <div class="total">
+        <p>Estimated Total</p>
+        <p>$4.55</p>
+      </div>
+      <a href="checkout.html"><button>CHECKOUT</button></a>
+    </div>
+  </div>
+
 </body>
 </html>
