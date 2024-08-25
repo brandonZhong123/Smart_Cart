@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/checkout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="stylesheets/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Checkout</title>
+</head>
+<body>
+
+  <form> 
+    <div class="left-checkout-page">
+      <h1>Contact Information</h1>
+      <input type="email" placeholder="Email Address" required>
+      
+      <h1>Shipping Address</h1>
+      <input type="text" placeholder="Country" required>
+      <div class="legal-name">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Apartment, Suite, etc. (Optional)">
+
+      <div class="city-postalcode">
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="Postal Code" required>
+      </div>
+      <input type="tel" placeholder="Phone Number (Optional)">
+    </div>
+    
+    <div class="right-checkout-page">
+      <h1>Order Summary</h1>
+      <div class="product-summary">
+        <table>
+          <tr>
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-details"> 
+                <img src="images/placeholder.png" alt="Product Image">
+                <div class="product-info">
+                  <p>Name</p>
+                  <p>Company</p>
+                  <p><a href="#">Remove</a> | <a href="#">Edit</a></p>
+                </div>
+              </div>
+            </td>
+            <td><p>$4.55</p></td>
+            <td><p>$4.55</p></td>
+          </tr>
+          <!-- Additional products go here -->
+        </table>
+      </div>
+
+      <div class="order-total">
+        <p>Subtotal: <span>$4.55</span></p>
+        <p>Shipping: <span>$5.00</span></p>
+        <p class="total-summary">Total: <span>$9.55</span></p>
+      </div>
+
+      <label>Card Number</label>
+      <input type="text" placeholder="0000 0000 0000 0000" required>
+      <label>Name on Card</label>
+      <input type="text" placeholder="Name on Card" required>
+      <div class="expiration-ccv">
+        <input type="text" placeholder="Expiration Date (MM/YY)" required>
+        <input type="text" placeholder="CCV" required>
+      </div>
+
+      <button type="submit" class="place-order-button">Place Order</button>
+    </div>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+form {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+input, label {
+  display: block;
+}
+
+.left-checkout-page, .right-checkout-page {
+  width: 45%;
+}
+
+.left-checkout-page h1, .right-checkout-page h1 {
+  font-size: 24px;
+  margin-left: 5%;
+}
+
+.left-checkout-page input, .right-checkout-page input {
+  width: 90%;
+  margin-inline: auto;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 24px;
+  padding: 0 10px;
+}
+
+.left-checkout-page div, .right-checkout-page div {
+  width: 93%;
+  margin-inline: auto;
+}
+
+.legal-name, .city-postalcode, .expiration-ccv {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.legal-name input, .city-postalcode input, .expiration-ccv input {
+  width: 48%;
+}
+
+.product-summary {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-details img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.order-total {
+  margin: 20px 5%;
+}
+
+.order-total p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.order-total span {
+  font-weight: bold;
+}
+
+label {
+  margin-left: 5%;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.total-summary {
+  border-bottom-style: solid;
+  height: 30px;
+}

@@ -1,5 +1,4 @@
 .account-register {
-  position: absolute;
   flex-direction: column;
   padding: 20px; 
   border-style: solid;
@@ -8,12 +7,13 @@
   transform: translate(-50%, -50%);
   justify-content: space-between;
   gap: 20px;
-  min-width: 300px; /* Minimum width of the form */
-  max-width: 100%;  /* Allow form to grow as needed */
-  min-height: auto; /* Allow form to grow in height based on content */
+  min-width: 300px; 
+  max-width: 100%;  
+  min-height: auto; 
   font-family: "Montserrat", sans-serif;
   border-radius: 16px;
   box-sizing: border-box;
+  margin-inline: auto;
 }
 
 .register-label {

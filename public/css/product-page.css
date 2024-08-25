@@ -1,8 +1,16 @@
 .product-wrapper {
   display: flex;
-  height: 400px;
+  min-height: 400px;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+}
+
+.product-page-image {
+  width: auto; /* Let the image maintain its aspect ratio */
+  height: auto;
+  margin-right: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 40px;
 }
 
 .left-product-page {
