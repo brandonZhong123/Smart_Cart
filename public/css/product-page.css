@@ -6,7 +6,7 @@
 }
 
 .product-page-image {
-  width: auto; /* Let the image maintain its aspect ratio */
+  width: auto; 
   height: auto;
   margin-right: 24px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

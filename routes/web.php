@@ -2,16 +2,12 @@
 
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [MainController::class, 'index']);
 
-Route::get('/products', function () {
-    return view('products',[
-        'products' => Product::all()
-    ]);
-});
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/products/{id}', function($id) {
     return view ('product', [
