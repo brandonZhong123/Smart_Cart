@@ -11,7 +11,7 @@
       <p> {{$product->description}} </p>
       <p> Price: ${{$product->price}} CAD  </p> 
       <div class="buttons"> 
-        <button class="cart-button"> add to cart</button>   
+        <a href="/cart/add/{{$product->id}}"><button class="cart-button"> add to cart</button> </a>
         <button class="wish-list-button"> add to wish list </button>   
       </div>
     </div>

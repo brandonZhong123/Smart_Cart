@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.product-header {
+  margin-left: 20px;
+}
+
 .product-page-image {
   width: auto; 
   height: auto;

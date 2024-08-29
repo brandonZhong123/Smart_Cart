@@ -1,4 +1,4 @@
-form {
+.checkout-form {
   display: flex;
   margin-inline: auto;
   justify-content: center;
@@ -8,7 +8,7 @@ form {
   margin-top: 100px;
 }
 
-input, label {
+.checkout-input, .checkout-label {
   display: block;
 }
 
@@ -32,7 +32,7 @@ input, label {
 }
 
 .left-checkout-page div, .right-checkout-page div {
-  width: 93%;
+  width: 94%;
   margin-inline: auto;
 }
 
@@ -90,8 +90,8 @@ input, label {
   font-weight: bold;
 }
 
-label {
-  margin-left: 5%;
+.checkout-label {
+  margin-left: 3%;
   font-size: 14px;
   margin-top: 16px;
 }
@@ -100,3 +100,5 @@ label {
   border-bottom-style: solid;
   height: 30px;
 }
+
+

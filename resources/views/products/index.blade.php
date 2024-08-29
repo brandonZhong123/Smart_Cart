@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <h1> Products </h1>
+    <h1 class="product-header"> Products </h1>
     <div class="featured-products">
 
       @foreach($products as $product)
