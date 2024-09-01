@@ -1,6 +1,7 @@
 
 <x-layout>
-    <form class="submit-form" method="POST" action="/products/store">
+    @if(auth()->user()->role == 'admin');
+    <form class="submit-form" method="POST" action="/products/store" enctype="multipart/form-data">
         @csrf
         <h1 class="submit-header">Submit a Product</h1>
     
@@ -53,9 +54,9 @@
     
         <div>
           <label class="submit-label" for="picture">Optional Picture</label>
-          <input class="submit-input" type="file" id="picture" name="picture" accept="image/*">
+          <input class="submit-input" type="file" id="picture" name="picture">
 
-          @error('price')
+          @error('picture')
             <p class="error-message"> {{$message}}</p>
           @enderror
 
@@ -63,4 +64,5 @@
     
         <button type="submit" class="submit-button">Submit Product</button>
       </form>
+      @endif
 </x-layout>

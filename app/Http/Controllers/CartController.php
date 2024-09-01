@@ -25,9 +25,8 @@ class CartController extends Controller
     }
 
     public function removeFromCart(Request $request, $productId) {
-        $product = Product::find($productId);
-        $oldCart = Session::has('cart') ? Session::get('cart') : null;
 
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->remove($productId);
 
@@ -35,8 +34,8 @@ class CartController extends Controller
         return redirect('/cart');
     }   
         
-
     public function viewCart() {
+        
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
 

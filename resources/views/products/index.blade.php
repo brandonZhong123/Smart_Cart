@@ -1,65 +1,14 @@
 
 <x-layout>
-    <div class="product-hero"> 
-        <p class="hero-label"> Get up 50% off on selected chairs.  </p>
+  <div class="product-hero"> 
+    <p class="hero-label">  </p>
     </div>
-    <div class="product-filter"> 
-        <button> Hello </button>
-        <div class="product-filter-content"> 
-            <a href =""> a </a>
-            <a href =""> a</a>
-            <a href =""> a</a>
-            <a href =""> a</a>
-        </div>
-    </div>
-
-    <div class="product-filter"> 
-        <button> Hello </button>
-        <div class="product-filter-content"> 
-            <a href =""> a </a>
-            <a href =""> a</a>
-            <a href =""> a</a>
-            <a href =""> a</a>
-        </div>
-    </div>
-
-    <div class="product-filter"> 
-      <button> Hello </button>
-      <div class="product-filter-content"> 
-          <a href =""> a </a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-      </div>
-    </div>
-
-    <div class="product-filter"> 
-      <button> Hello </button>
-      <div class="product-filter-content"> 
-          <a href =""> a </a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-      </div>
-    </div>
-
-    <div class="product-filter"> 
-      <button> Hello </button>
-      <div class="product-filter-content"> 
-          <a href =""> a </a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-          <a href =""> a</a>
-      </div>
-    </div>
-
     <h1 class="product-header"> Products </h1>
     <div class="featured-products">
-
       @foreach($products as $product)
       <div class="product-container">
         <a href="/products/{{$product->id}}"> 
-          <img class="product-images"src="images/placeholder.png"> 
+          <img class="product-images"src="{{$product->picture ? asset('storage/' . $product->picture) : asset('images/placeholder.png') }}"> 
         </a>
         <div class="product-information">  
           <a href="product.html"class="product-title"> {{$product->title}}  </a>
@@ -68,6 +17,5 @@
         </div>
       </div>
       @endforeach
-    
     </div>
 </x-layout>

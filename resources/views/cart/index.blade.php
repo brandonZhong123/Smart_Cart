@@ -16,11 +16,11 @@
                 <tr>
                 <td>
                     <div class="product-details"> 
-                    <img src="images/placeholder.png" alt="Product Image">
+                    <img src="{{$cartItem['picture'] ? asset('storage/' . $cartItem['picture']) : asset('images/placeholder.png') }}" alt="Product Image">
                     <div class="product-info">
                         <p>{{$cartItem['item']}}</p>
                         <a >{{$cartItem['company']}}</a>
-                        <a href="/cart/remove/{{$cartItem['id']}}">Remove | Edit</a>
+                        <a href="/cart/remove/{{$cartItem['id']}}">Remove</a>
                     </div>
                     </div>
                 </td>

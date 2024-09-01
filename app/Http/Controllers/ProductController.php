@@ -28,6 +28,14 @@ class ProductController extends Controller
             'price' => ['required']
         ]);
 
+
+        if($request->hasFile('picture')) {
+            $formFields['picture'] = $request->file('picture')->store('pictures', 'public');
+        }
+
         Product::create($formFields);
+
+        return redirect('/products');
+
     }
 }

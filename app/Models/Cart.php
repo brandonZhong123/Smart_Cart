@@ -3,15 +3,16 @@
 namespace App\Models;
 
 use App\Models\Product;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class Cart 
 {
     public $cartItems = null;
     public $totalQty = 0;
     public $total = 0;
+
     public function __construct($oldCart){
+        
         if($oldCart) {
             $this->cartItems = $oldCart->cartItems;
             $this->totalQty = $oldCart->totalQty;
@@ -26,7 +27,8 @@ class Cart
             'originalPrice' => $product->price,
             'item' => $product->title,
             'company' => $product->company,
-            'id' => $id
+            'id' => $id,
+            'picture' => $product->picture
         ];
         
         if (isset($this->cartItems[$id])) {
