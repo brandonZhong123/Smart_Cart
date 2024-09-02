@@ -12,6 +12,7 @@ use App\Http\Controllers\ProductController;
 Route::get('/', [MainController::class, 'index']);
 
 // Product Controller
+
 Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/products/create', [ProductController::class, 'create'])->middleware('auth');
@@ -42,6 +43,7 @@ Route::get('cart/remove/{id}', [CartController::class, 'removeFromCart']);
 // Order Controller
 
 Route::get('cart/checkout', [OrderController::class, 'checkout']);
+
 Route::post('cart/checkout/store', [OrderController::class, 'store']);
 
 

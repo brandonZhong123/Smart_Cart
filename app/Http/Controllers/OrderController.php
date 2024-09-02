@@ -14,15 +14,16 @@ class OrderController extends Controller
     public static function checkout() {
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
+
         return view('cart.checkout', [           
-        'cart' => $cart->cartItems,
-        'totalQty' =>$cart->totalQty, 
-        'total'=>$cart->total]);
-    }
+            'cart' => $cart->cartItems,
+            'totalQty' =>$cart->totalQty, 
+            'total'=>$cart->total]);
+        }
 
     public function store(Request $request)
     {
-        $cart = Session::get('cart'); // Retrieve cart from session
+        $cart = Session::get('cart'); 
 
         if (!$cart || !$cart->cartItems) {
             return redirect('/cart')->with('error', 'Your cart is empty.');
@@ -49,12 +50,11 @@ class OrderController extends Controller
             'postal_code' => $validated['postal_code'],
             'phone' => $request->input('phone'),
             'subtotal' => $cart->total,
-            'shipping' => 5.00, // Flat rate shipping
+            'shipping' => 5.00, 
             'sales_tax' => round($cart->total * 0.13, 2),
             'total' => round($cart->total * 1.13 + 5.00, 2),
         ]);
 
-        // Store each cart item in the order_items table
         foreach ($cart->cartItems as $cartItem) {
             OrderItem::create([
                 'order_id' => $order->id,

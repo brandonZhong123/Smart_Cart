@@ -24,7 +24,7 @@ class UserController extends Controller
             'password' => ['required', 'confirmed', 'min:6'],
         ]);
         
-        $formFields['role'] = 'user';
+        $formFields['role'] = 'admin';
         $formFields['password'] = bcrypt($formFields['password']);
 
         $user = User::create($formFields);

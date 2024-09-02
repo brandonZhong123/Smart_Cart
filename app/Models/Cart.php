@@ -12,7 +12,6 @@ class Cart
     public $total = 0;
 
     public function __construct($oldCart){
-        
         if($oldCart) {
             $this->cartItems = $oldCart->cartItems;
             $this->totalQty = $oldCart->totalQty;

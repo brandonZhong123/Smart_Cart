@@ -4,7 +4,7 @@
             smart<span class="highlight">Cart</span>
         </h1>
         <div>
-            <a href="register.html" class="cta-button">SHOP NOW</a>
+            <a href="/products" class="cta-button">SHOP NOW</a>
         </div>
     </div>
 </section>

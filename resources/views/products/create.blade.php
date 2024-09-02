@@ -1,6 +1,6 @@
 
 <x-layout>
-    @if(auth()->user()->role == 'admin');
+    @if(auth()->user()->role == "admin");
     <form class="submit-form" method="POST" action="/products/store" enctype="multipart/form-data">
         @csrf
         <h1 class="submit-header">Submit a Product</h1>

@@ -14,6 +14,7 @@
       <a href="products">Shop Now</a>
       <a href="#">Help</a>
       <form class="search-bar-form" action="/products" method="GET"> 
+        @csrf
         <input class="search-bar" type="text" name="search" placeholder="Search Now"> 
         <button type="submit" class="search-icon">
           <i class="fa-solid fa-magnifying-glass fa-2x"></i>
@@ -29,7 +30,6 @@
       </form>
     
       @else
-
       <a class="log-in" href="/login">Login</a>
       <a class="register" href="/register">Register</a>
       @endauth
